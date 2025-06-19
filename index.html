@@ -15,25 +15,25 @@
       color: #222;
     }
     .hero {
-      background: url('logo-wallpaper-faded.png') no-repeat center center;
+      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                  url('logo-wallpaper-faded.png') no-repeat center center;
       background-size: cover;
       padding: 6rem 1rem;
       text-align: center;
       color: #fff;
-      background-color: rgba(0, 0, 0, 0.5);
     }
     .hero h1 {
       font-size: 3rem;
       margin: 0;
-      color: #002147;
+      color: #ffffff;
     }
     .hero p {
-      font-size: 1.2rem;
-      color: #002147;
+      font-size: 1.1rem;
+      color: #e0e0e0;
     }
     .cta {
       text-align: center;
-      margin: 2rem 0;
+      margin: 2rem 0 3rem 0;
     }
     .cta a {
       background-color: #002147;
@@ -42,27 +42,34 @@
       font-size: 16px;
       text-decoration: none;
       border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    .cta a:hover {
+      background-color: #014080;
     }
     .section {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 2rem 1rem;
+      padding: 1rem 1rem 4rem 1rem;
     }
     .section h2 {
       text-align: center;
       color: #002147;
       margin-bottom: 1.5rem;
+      font-size: 1.8rem;
     }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1.2rem;
+      padding: 0 1rem;
     }
     .grid-item {
       background: #f0f4f8;
       padding: 1rem;
       border-radius: 8px;
       font-size: 0.95rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
     }
     footer {
       background-color: #002147;
@@ -70,7 +77,6 @@
       text-align: center;
       padding: 1.5rem 1rem;
       font-size: 0.9rem;
-      margin-top: 4rem;
     }
   </style>
 </head>
@@ -78,6 +84,7 @@
   <div class="hero">
     <h1>Airfawn Ltd</h1>
     <p>Custom & Production Wiring Harnesses – UK & Overseas</p>
+    <p style="margin-top: 0.5rem; font-size: 1rem;">Trusted by Industry and Defence Sectors</p>
   </div>
 
   <div class="cta">
